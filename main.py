@@ -1,10 +1,14 @@
+# This file contains our core functionality to build a JSON file which will
+# have file info and a link to embed files in your web page from your Google
+# Drive storage. It uses credentials_module.json generated for init.py to work.
+
 from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 import json
 
 credentials_auth = "credentials_module.json"
 
-folder_id = "1PTqJKiyuJuh1AyHdYcanKJwrLrlbIYt3"
+folder_id = "" # Find it in "Share link"
 
 def login():
     gauth = GoogleAuth()
